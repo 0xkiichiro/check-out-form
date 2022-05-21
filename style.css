@@ -7,10 +7,17 @@
   font-family: "Montserrat", sans-serif;
 }
 
+header h1 {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 75%;
+  grid-template-columns: 480px 350px;
+  justify-content: center;
+  padding: 1rem;
   margin: 2rem auto;
 }
 
@@ -19,9 +26,22 @@ form {
   flex-direction: column;
 }
 
+.form h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.form label {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.form icon {
+  display: inline;
+}
+
 .products {
-  padding: 2rem;
-  border: 1px solid red;
+  padding: 0 3rem;
 }
 
 .product {
@@ -30,4 +50,69 @@ form {
 
 .product img {
   width: 100px;
+}
+
+.country-post {
+  display: flex;
+}
+
+.country,
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  margin-left: 1rem;
+  width: 64%;
+}
+
+.form input {
+  padding: 0.5rem;
+  width: 80%;
+  padding-left: 2rem;
+  border-radius: 5px;
+  border: 1px solid #828282;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.input {
+  position: relative;
+}
+
+.input i {
+  position: absolute;
+  transform: translate(-375px, 8px);
+  color: #828282;
+}
+
+.br {
+  margin-top: 4rem;
+}
+
+select {
+  padding: 00.5rem;
+  padding-left: 2rem;
+  border-radius: 5px;
+  border: 1px solid #828282;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.cp-input-1 i {
+  position: absolute;
+  transform: translate(-115px, 10px);
+  color: #828282;
+}
+
+.cp-input-2 i {
+  position: absolute;
+  transform: translate(-240px, 10px);
+  color: #828282;
+}
+
+.continue {
+  display: block;
+  margin: 0 auto;
 }
